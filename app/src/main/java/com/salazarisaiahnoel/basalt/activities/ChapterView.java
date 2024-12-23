@@ -83,6 +83,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -283,8 +284,8 @@ public class ChapterView extends AppCompatActivity implements ChapterAdapter.OnL
             mangaChapterTitles.clear();
             for (Map<String, String> value : values){
                 for (Map.Entry<String, String> entry : value.entrySet()){
-                    mangaChapterIds.add(entry.getValue().split("\\$")[1]);
-                    mangaChapterTitles.add(entry.getValue().split("\\$")[2]);
+                    mangaChapterIds.add(entry.getValue().split("~~")[1]);
+                    mangaChapterTitles.add(entry.getValue().split("~~")[2]);
                 }
             }
         }
@@ -352,14 +353,15 @@ public class ChapterView extends AppCompatActivity implements ChapterAdapter.OnL
                     uriDocumentFile = DocumentFile.fromTreeUri(ChapterView.this, uri);
 
                     if (uriDocumentFile.findFile(Objects.requireNonNull(getIntent().getStringExtra(intentFromManga[0]))) != null){
+                        uriDocumentFile = uriDocumentFile.findFile(Objects.requireNonNull(getIntent().getStringExtra(intentFromManga[0])));
                         List<String> temporaryMangaChapterTitles = new ArrayList<>();
 
                         List<Map<String, String>> values = es.getTableValues(downloadedDB, downloadedTable);
                         for (Map<String, String> value : values){
                             for (Map.Entry<String, String> entry : value.entrySet()){
-                                if (entry.getValue().split("\\$")[0].equals(getIntent().getStringExtra(intentFromManga[0]))){
-                                    if (uriDocumentFile.findFile(entry.getValue().split("\\$")[1]) != null){
-                                        temporaryMangaChapterTitles.add(entry.getValue().split("\\$")[2]);
+                                if (entry.getValue().split("~~")[0].equals(getIntent().getStringExtra(intentFromManga[0]))){
+                                    if (uriDocumentFile.findFile(entry.getValue().split("~~")[1]) != null){
+                                        temporaryMangaChapterTitles.add(entry.getValue().split("~~")[2]);
                                     } else {
                                         String whereClause = es.whereClauseCreator(downloadedTableColumn, entry.getValue());
                                         es.deleteFromTable(downloadedDB, downloadedTable, whereClause);
@@ -485,9 +487,9 @@ public class ChapterView extends AppCompatActivity implements ChapterAdapter.OnL
                 downloadIndex++;
                 new ImageDownloader().execute(mangaChapterPagesToDownload, mangaChapterPageUrlsToDownload);
             } else {
-                if (!es.doesValueExist(downloadedDB, downloadedTable, downloadedTableColumn, getIntent().getStringExtra(intentFromManga[0]) + "$" + mangaChapterIds.get(globalPosition) + "$" + mangaChapterTitles.get(globalPosition))){
+                if (!es.doesValueExist(downloadedDB, downloadedTable, downloadedTableColumn, getIntent().getStringExtra(intentFromManga[0]) + "~~" + mangaChapterIds.get(globalPosition) + "~~" + mangaChapterTitles.get(globalPosition))){
                     Map<String, String> newValues = new HashMap<>();
-                    newValues.put(downloadedTableColumn, getIntent().getStringExtra(intentFromManga[0]) + "$" + mangaChapterIds.get(globalPosition) + "$" + mangaChapterTitles.get(globalPosition));
+                    newValues.put(downloadedTableColumn, getIntent().getStringExtra(intentFromManga[0]) + "~~" + mangaChapterIds.get(globalPosition) + "~~" + mangaChapterTitles.get(globalPosition));
                     es.insertToTable(downloadedDB, downloadedTable, newValues);
                 }
 

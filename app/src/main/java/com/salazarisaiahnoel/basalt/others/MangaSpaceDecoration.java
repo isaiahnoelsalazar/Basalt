@@ -1,4 +1,4 @@
-package com.saianoe.basalt.others;
+package com.salazarisaiahnoel.basalt.others;
 
 import android.graphics.Rect;
 import android.view.View;
@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.saianoe.basalt.R;
+import com.salazarisaiahnoel.basalt.R;
 
 import java.util.Objects;
 

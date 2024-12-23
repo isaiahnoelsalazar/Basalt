@@ -1,23 +1,23 @@
-package com.saianoe.basalt.activities;
+package com.salazarisaiahnoel.basalt.activities;
 
-import static com.saianoe.basalt.others.Constants.chapterEND;
-import static com.saianoe.basalt.others.Constants.chapterSTART;
-import static com.saianoe.basalt.others.Constants.dataSaver;
-import static com.saianoe.basalt.others.Constants.downloadPathString;
-import static com.saianoe.basalt.others.Constants.downloadPathNotSet;
-import static com.saianoe.basalt.others.Constants.feedUrl;
-import static com.saianoe.basalt.others.Constants.forwardSlash;
-import static com.saianoe.basalt.others.Constants.intentFromChapter;
-import static com.saianoe.basalt.others.Constants.intentFromManga;
-import static com.saianoe.basalt.others.Constants.prefs;
-import static com.saianoe.basalt.others.Constants.prefsSettings;
-import static com.saianoe.basalt.others.Constants.readDB;
-import static com.saianoe.basalt.others.Constants.readTable;
-import static com.saianoe.basalt.others.Constants.readTableColumns;
-import static com.saianoe.basalt.others.Constants.typeData;
-import static com.saianoe.basalt.others.Constants.typeDataSaver;
-import static com.saianoe.basalt.others.Constants.typeDataSaver2;
-import static com.saianoe.basalt.others.Constants.webGet;
+import static com.salazarisaiahnoel.basalt.others.Constants.chapterEND;
+import static com.salazarisaiahnoel.basalt.others.Constants.chapterSTART;
+import static com.salazarisaiahnoel.basalt.others.Constants.dataSaver;
+import static com.salazarisaiahnoel.basalt.others.Constants.downloadPathString;
+import static com.salazarisaiahnoel.basalt.others.Constants.downloadPathNotSet;
+import static com.salazarisaiahnoel.basalt.others.Constants.feedUrl;
+import static com.salazarisaiahnoel.basalt.others.Constants.forwardSlash;
+import static com.salazarisaiahnoel.basalt.others.Constants.intentFromChapter;
+import static com.salazarisaiahnoel.basalt.others.Constants.intentFromManga;
+import static com.salazarisaiahnoel.basalt.others.Constants.prefs;
+import static com.salazarisaiahnoel.basalt.others.Constants.prefsSettings;
+import static com.salazarisaiahnoel.basalt.others.Constants.readDB;
+import static com.salazarisaiahnoel.basalt.others.Constants.readTable;
+import static com.salazarisaiahnoel.basalt.others.Constants.readTableColumns;
+import static com.salazarisaiahnoel.basalt.others.Constants.typeData;
+import static com.salazarisaiahnoel.basalt.others.Constants.typeDataSaver;
+import static com.salazarisaiahnoel.basalt.others.Constants.typeDataSaver2;
+import static com.salazarisaiahnoel.basalt.others.Constants.webGet;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -40,9 +40,9 @@ import androidx.documentfile.provider.DocumentFile;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.saianoe.basalt.R;
-import com.saianoe.basalt.others.EasySQL;
-import com.saianoe.basalt.others.Fullscreen;
+import com.salazarisaiahnoel.basalt.R;
+import com.salazarisaiahnoel.basalt.others.EasySQL;
+import com.salazarisaiahnoel.basalt.others.Fullscreen;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;

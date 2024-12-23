@@ -1,20 +1,19 @@
-package com.saianoe.basalt;
+package com.salazarisaiahnoel.basalt;
 
-import static com.saianoe.basalt.others.Constants.homeUrl;
-import static com.saianoe.basalt.others.Constants.home_manga_ids;
-import static com.saianoe.basalt.others.Constants.notificationDownloadStatusList;
-import static com.saianoe.basalt.others.Constants.notificationUpdateStatusList;
-import static com.saianoe.basalt.others.Constants.prefs;
-import static com.saianoe.basalt.others.Constants.prefsEditor;
-import static com.saianoe.basalt.others.Constants.prefsSettings;
-import static com.saianoe.basalt.others.Constants.typeAttributes;
-import static com.saianoe.basalt.others.Constants.typeData;
-import static com.saianoe.basalt.others.Constants.typeId;
-import static com.saianoe.basalt.others.Constants.updateDB;
-import static com.saianoe.basalt.others.Constants.updateNotificationChannelCode;
-import static com.saianoe.basalt.others.Constants.updateTable;
-import static com.saianoe.basalt.others.Constants.updateTableColumns;
-import static com.saianoe.basalt.others.Constants.webGet;
+import static com.salazarisaiahnoel.basalt.others.Constants.homeUrl;
+import static com.salazarisaiahnoel.basalt.others.Constants.home_manga_ids;
+import static com.salazarisaiahnoel.basalt.others.Constants.notificationUpdateStatusList;
+import static com.salazarisaiahnoel.basalt.others.Constants.prefs;
+import static com.salazarisaiahnoel.basalt.others.Constants.prefsEditor;
+import static com.salazarisaiahnoel.basalt.others.Constants.prefsSettings;
+import static com.salazarisaiahnoel.basalt.others.Constants.typeAttributes;
+import static com.salazarisaiahnoel.basalt.others.Constants.typeData;
+import static com.salazarisaiahnoel.basalt.others.Constants.typeId;
+import static com.salazarisaiahnoel.basalt.others.Constants.updateDB;
+import static com.salazarisaiahnoel.basalt.others.Constants.updateNotificationChannelCode;
+import static com.salazarisaiahnoel.basalt.others.Constants.updateTable;
+import static com.salazarisaiahnoel.basalt.others.Constants.updateTableColumns;
+import static com.salazarisaiahnoel.basalt.others.Constants.webGet;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -35,10 +34,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.saianoe.basalt.activities.SettingsActivity;
-import com.saianoe.basalt.fragments.HomeFragment;
-import com.saianoe.basalt.fragments.SearchFragment;
-import com.saianoe.basalt.others.EasySQL;
+import com.salazarisaiahnoel.basalt.activities.SettingsActivity;
+import com.salazarisaiahnoel.basalt.fragments.HomeFragment;
+import com.salazarisaiahnoel.basalt.fragments.SearchFragment;
+import com.salazarisaiahnoel.basalt.others.EasySQL;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

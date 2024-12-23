@@ -1,4 +1,4 @@
-package com.saianoe.basalt.others;
+package com.salazarisaiahnoel.basalt.others;
 
 import android.content.SharedPreferences;
 

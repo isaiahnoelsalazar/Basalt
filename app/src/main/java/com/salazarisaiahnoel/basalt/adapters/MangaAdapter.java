@@ -1,4 +1,4 @@
-package com.saianoe.basalt.adapters;
+package com.salazarisaiahnoel.basalt.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.saianoe.basalt.R;
+import com.salazarisaiahnoel.basalt.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

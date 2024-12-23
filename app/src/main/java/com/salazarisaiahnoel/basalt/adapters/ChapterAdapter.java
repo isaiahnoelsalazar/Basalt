@@ -1,10 +1,10 @@
-package com.saianoe.basalt.adapters;
+package com.salazarisaiahnoel.basalt.adapters;
 
-import static com.saianoe.basalt.others.Constants.atSeparator;
-import static com.saianoe.basalt.others.Constants.defaultComparator;
-import static com.saianoe.basalt.others.Constants.readDB;
-import static com.saianoe.basalt.others.Constants.readTable;
-import static com.saianoe.basalt.others.Constants.readTableColumns;
+import static com.salazarisaiahnoel.basalt.others.Constants.atSeparator;
+import static com.salazarisaiahnoel.basalt.others.Constants.defaultComparator;
+import static com.salazarisaiahnoel.basalt.others.Constants.readDB;
+import static com.salazarisaiahnoel.basalt.others.Constants.readTable;
+import static com.salazarisaiahnoel.basalt.others.Constants.readTableColumns;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +15,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.saianoe.basalt.R;
-import com.saianoe.basalt.others.EasySQL;
+import com.salazarisaiahnoel.basalt.R;
+import com.salazarisaiahnoel.basalt.others.EasySQL;
 
 import java.util.ArrayList;
 import java.util.List;

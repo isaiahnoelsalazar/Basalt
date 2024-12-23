@@ -1,7 +1,7 @@
-package com.saianoe.basalt.adapters;
+package com.salazarisaiahnoel.basalt.adapters;
 
-import static com.saianoe.basalt.others.Constants.one;
-import static com.saianoe.basalt.others.Constants.zero;
+import static com.salazarisaiahnoel.basalt.others.Constants.one;
+import static com.salazarisaiahnoel.basalt.others.Constants.zero;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.saianoe.basalt.R;
+import com.salazarisaiahnoel.basalt.R;
 
 import java.util.ArrayList;
 import java.util.List;
